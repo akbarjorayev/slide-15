@@ -1,0 +1,13 @@
+:root {
+  color-scheme: light dark;
+}
+
+:root {
+  --bg-color: light-dark(#ffffff, #222222);
+  --bg-bright-color: light-dark(#d8d8d8, #393939);
+}
+
+:root {
+  --text-color: light-dark(#111111, #eeeeee);
+  --text-opa-color: light-dark(#000000bb, #ffffffbb);
+}
