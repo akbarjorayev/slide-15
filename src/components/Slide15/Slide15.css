@@ -1,0 +1,50 @@
+.slide_15_area {
+  padding: 5px;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(4, var(--slide-15-square-size));
+  grid-template-rows: repeat(4, var(--slide-15-square-size));
+  background-color: var(--bg-bright-color);
+  border-radius: 20px;
+
+  &[isSolved='true'] {
+    background-color: var(--slide-15-won-bg-color);
+  }
+}
+
+.slide_15_square {
+  width: var(--slide-15-square-size);
+  height: var(--slide-15-square-size);
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.slide_15_btn {
+  width: calc(var(--slide-15-square-size) / 2);
+  height: calc(var(--slide-15-square-size) / 2);
+  background-color: var(--bg-bright-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 20px;
+
+  & svg {
+    width: var(--slide-15-square-svg-size);
+    height: var(--slide-15-square-svg-size);
+  }
+}
+
+:root {
+  --slide-15-square-size: 100px;
+  --slide-15-square-svg-size: 20px;
+  --slide-15-won-bg-color: light-dark(#84f086, #35cc38);
+}
